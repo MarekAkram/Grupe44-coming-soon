@@ -6,10 +6,22 @@
 @import "../3rd-party/font-awesome.min.css";
 
 /* components */
-@import "../components/mouse.css";
 @import "../components/clock.css";
+@import "../components/form.css";
 @import "../components/progress-bar.css";
+@import "../components/mouse.css";
 /* custom style below this comment line */
+
+/* CUSTOM STYLE BELOW THIS COMMENT LINE */
+.hero {
+  background-image: url(../../img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 
 .logo {
   width: 3rem;
@@ -19,16 +31,6 @@
   text-transform: uppercase;
   text-align: center;
 }
-
-@keyframes slinkis {
-  0% {
-      margin-left: 0;
-  }
-  100% {
-      margin-left: -12ch;
-  }
-}
-
 .main-description {
   font-size: 1.3rem;
   text-align: center;

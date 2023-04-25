@@ -18,6 +18,16 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@keyframes slinkis {
+  0% {
+      margin-left: 0;
+  }
+  100% {
+      margin-left: -12ch;
+  }
+}
+
 .main-description {
   font-size: 1.3rem;
   text-align: center;
@@ -70,7 +80,7 @@ footer > .row-short a {
   position: relative;
 }
 .text-trio > p::after {
-  content: "";
+  content: '';
   display: none;
   width: 0.1rem;
   height: 1rem;
@@ -86,10 +96,10 @@ footer > .row-short a {
 
 @media (min-width: 44rem) {
   .text-trio {
-    display: flex;
-    gap: 1.7rem;
+      display: flex;
+      gap: 1.7rem;
   }
   .text-trio > p::after {
-    display: block;
+      display: block;
   }
 }

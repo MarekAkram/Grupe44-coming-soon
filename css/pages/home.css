@@ -6,7 +6,8 @@
 @import "../3rd-party/font-awesome.min.css";
 
 /* components */
-
+@import "../components/clock.css";
+@import "../components/progress-bar.css";
 /* custom style below this comment line */
 
 .logo {
@@ -68,10 +69,9 @@ footer > .row-short a {
 .text-trio > p {
   position: relative;
 }
-
 .text-trio > p::after {
   content: "";
-  display: inline-block;
+  display: none;
   width: 0.1rem;
   height: 1rem;
   background-color: #fff;
@@ -79,9 +79,8 @@ footer > .row-short a {
   top: 50%;
   right: -0.9rem;
   transform: translateY(-50%);
-  }
-
-  .text-trio > p:last-child::after {
+}
+.text-trio > p:last-child::after {
   display: none;
 }
 
